@@ -20,7 +20,7 @@ jobs:
           path: .
       - terraform/apply:
           path: .
-      - terraform/destroy -auto-approve:
+      - terraform/destroy:
           path: .
 workflows:
   example-workflow:
