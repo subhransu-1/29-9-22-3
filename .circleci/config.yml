@@ -18,9 +18,9 @@ jobs:
           path: .
       - terraform/plan:
           path: .
-      - terraform/apply -auto-approve:
+      - terraform/apply:
           path: .
-      - terraform/destroy -auto-approve:
+      - terraform/destroy:
           path: .
 workflows:
   example-workflow:
