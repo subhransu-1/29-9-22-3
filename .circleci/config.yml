@@ -13,9 +13,8 @@ jobs:
           terraform_version: '1.2.3'
       - terraform/validate:
           path: .
-      - azure-cli/install
+      - azure-cli/install:
       - azure-cli/login-with-user:
-         alternet-tenant: true 
 
 workflows:
   example-workflow:
