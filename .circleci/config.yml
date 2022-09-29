@@ -9,13 +9,13 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
+      - azure-cli/install
+      - azure-cli/login-with-user:
+          alternate-tenant: true
       - terraform/install:
           terraform_version: '1.2.3'
       - terraform/validate:
           path: .
-      - azure-cli/install:
-      - azure-cli/login-with-user:
-
 workflows:
   example-workflow:
     jobs:
