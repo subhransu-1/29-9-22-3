@@ -13,7 +13,7 @@ jobs:
       - terraform/validate:
           path: .
       - terraform/fmt:
-          path: .
+          module_path: .
 
 workflows:
   example-workflow:
